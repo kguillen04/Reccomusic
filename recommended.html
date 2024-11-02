@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    recommended
+{% endblock %}
+
+{% block main %}
+    <table style="width:80%" cellpadding="25">
+        <thead class="head-font">
+            <tr>
+                <td>song name</td>
+                <td>artist</td>
+            </tr>
+        </thead>
+        <tbody class="body-font">
+            {% for song in recommended %}
+            <tr>
+                <td>{{ song.name }}</td>
+                <td>{{ song.artists }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

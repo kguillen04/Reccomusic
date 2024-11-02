@@ -1,0 +1,105 @@
+.background {
+    background: #c8688c
+}
+
+.head-font
+{
+    font-family: 'Fredoka One';
+    font-color: white;
+}
+
+.body-font
+{
+    font-family: 'Fredoka';
+    font-color: white;
+}
+
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+    font-family: 'Fredoka One';
+}
+
+nav .navbar-nav
+{
+    font-family: 'Fredoka';
+    color: white;
+}
+
+nav .navbar-background
+{
+    background-color: #f283a5;
+}
+
+/* Colors for brand */
+nav .navbar-brand .pink
+{
+    color: #ffb6c1;
+}
+nav .navbar-brand .dark_pink
+{
+    color: #c8688c;
+}
+nav .navbar-brand .white
+{
+    color: #fff;
+}
+
+nav .nav-item
+{
+    color: #fff;
+}
+
+h1
+{
+    background: #ffb6c1;
+    padding: 25px;
+    border-radius: 50px;
+    font-family: 'Fredoka One';
+    font-color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    margin-left: 175px;
+}
+
+p
+{
+    font-family: 'Fredoka One';
+    font-color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffb6c1;
+    border-radius: 50px;
+    font-color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button {
+    background-color: #ffb6c1;
+    color: black;
+    font-family: 'Fredoka One';
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #a6496b;
+    color: white;
+    text-decoration: none;
+}
+

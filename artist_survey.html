@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    song generator
+{% endblock %}
+
+{% block main %}
+<form action="/artist_survey" method="post">
+    <div class="mb-3">
+        <h1 style="margin-top:10px; margin-right:175px; font-size:30px">For an extra song recommendation, fill out this survey. Select one of the creators’ names to get a surprise song recommendation from their respective favorite artist!</h1>
+        <p style="margin-top:10px">Choose one of us for a song from our favorite artist.</p>
+        <select class="form-select mx-auto w-auto" name="person">
+            <optgroup label="Person">
+                <option>Angelica</option>
+                <option>Emi</option>
+                <option>Kevin</option>
+            </optgroup>
+        </select>
+        <p>How much do you feel like dancing right now?</p>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto body-font" id="danceability" name="danceability" type="number" min="1" max="10">
+        <p>How energetic do you feel right now?</p>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto body-font" id="energy" name="energy" type="number" min="1" max="10">
+        <p>How positive do you feel right now?</p>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto body-font" id="valence" name="valence" type="number" min="1" max="10">
+        <p>Are you comfortable with explicit lyrics?</p>
+        <select class="form-select mx-auto w-auto" name="explicitness">
+            <optgroup label="Explicit">
+                <option>Yes</option>
+                <option>No</option>
+            </optgroup>
+        </select>
+    </div><br><br>
+    <button class="button" type="submit">Submit</button>
+</form>
+{% endblock %}

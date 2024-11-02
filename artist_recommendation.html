@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ artist }} recommendations
+{% endblock %}
+
+{% block main %}
+    <table style="width:80%" cellpadding="25">
+        <thead class="head-font">
+            <tr>
+                <th>song</th>
+                <th>artist</th>
+                <th>album</th>
+                <th>danceability</th>
+                <th>energy</th>
+                <th>valence (musical positivity)</th>
+            </tr>
+        </thead>
+        <tbody class="body-font">
+            {% for recommendation in recommendations %}
+            <tr>
+                <td>{{ recommendation["track_name"] }}</td>
+                <td>{{ recommendation["artist_name"] }}</td>
+                <td>{{ recommendation["album_name"] }}</td>
+                <td>{{ recommendation["danceability"] | float | round(2, 'common') }}</td>
+                <td>{{ recommendation["energy"] | float | round(2, 'common') }}</td>
+                <td>{{ recommendation["valence"] | float | round(2, 'common') }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

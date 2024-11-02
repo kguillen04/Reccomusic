@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    survey
+{% endblock %}
+
+{% block main %}
+    <form action="/survey" method="post">
+        <div class="mb-3 head-font">
+            <h1 style="margin-top:10px; margin-right:175px; font-size:30px">For new music recommendations, fill out this survey with your preferences. Whether you feel like dancing, are full of energy, or just want to hear something chill, this survey will return a list of songs to fit your mood.</h1>
+            <p>On a scale of 1 to 10...</p>
+            <p>How much do you feel like dancing right now?</p>
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto body-font" id="danceability" name="danceability" type="number" min="1" max="10">
+            <p>How energetic do you feel right now?</p>
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto body-font" id="energy" name="energy" type="number" min="1" max="10">
+            <p>How positive do you feel right now?</p>
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto body-font" id="valence" name="valence" type="number" min="1" max="10">
+            <p>Are you comfortable with explicit lyrics?</p>
+            <select class="form-select mx-auto w-auto body-font" name="explicitness">
+                <optgroup label="Explicit">
+                    <option>Yes</option>
+                    <option>No</option>
+                </optgroup>
+            </select>
+        </div><br><br>
+        <button class="button" type="submit">Submit</button>
+    </form>
+{% endblock %}

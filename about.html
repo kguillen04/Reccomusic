@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    about us
+{% endblock %}
+
+{% block main %}
+    <head>
+        <title>about us</title>
+    </head>
+    <h1 style="margin-top:10px; margin-right:175px">about us</h1>
+    <p style="margin-top: 0px; margin-bottom:75px; margin-left:175px; margin-right:175px; text-align:left">Hi all! Thanks for visiting our about us page. We’re a group of first-year students. Here are a couple of fun facts about us: Kevin and Emi met over summer at a Yale program for FGLI students called FSY and Emi and Angelica are roommates in Pauli Murray College! We were super excited to work on this project together because we always try to recommend music to each other, but our tastes can be pretty different. By creating this website, we thought we could find a more accurate way of recommending music to each other–and to anyone else who wants to access our website. Keep reading to find out more about each of our individual music tastes!</p>
+    <a class="button" href="{{url_for('artist_survey')}}" style="font-size:30px">click here for a recommendation from our favorite artists</a>
+    <br>
+    <br>
+    <body>
+        <div>
+            <h1 style="margin-bottom:10px; width:450px">Angelica Pham</h1>
+            <p style="margin-top: 0px; margin-bottom:25px; margin-left:175px; margin-right:175px; text-align:left">Hello! I'm Angelica Pham, and I'm a first-year student at Yale in Pauli Murray College. I am a prospective major in Computer Science and Psychology. I love all music (maybe even country), but I mostly listen to alternative R&B, neo-soul, and rap. If you're looking for a good vibe, listen to my playlist!</p>
+            <iframe style="border-radius:20px" src="https://open.spotify.com/embed/playlist/2JghqJmVEQP7IfPvqvNSe1?utm_source=generator" width="75%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div>
+            <h1 style="width:325px">Emi Glass</h1>
+            <p style="margin-top: 0px; margin-bottom:25px; margin-left:175px; margin-right:175px; text-align:left">Hi! I'm Emi Glass. I'm a first-year student at Yale from Dayton, Ohio. Currently, I'm considering studying history or political science. I love listening to music from a lot of different artists and genres. However, I definitely have a strong preference for slow and sad songs, with some R&B and oldies. If you're looking for relaxed, chill music, you should definitely listen to my personal playlist!</p>
+            <iframe style="border-radius:20px" src="https://open.spotify.com/embed/playlist/5WiBOT7HceltaICeRq52tG?utm_source=generator" width="75%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div>
+            <h1 style="width:400px">Kevin Guillen</h1>
+            <p style="margin-top: 0px; margin-bottom:25px; margin-left:175px; margin-right:175px; text-align:left">Hey, I’m Kevin Guillen, a first-year student at Yale in Pierson College. I was born and raised in Santa Ana, California. As of now, I am considering pursuing Computer Science or Statistics and Data Science as my major. In terms of my music taste, I mainly listen to Pop, K-Pop, and Reggaeton, though I do occasionally dabble in other genres. I really love music that is upbeat, energetic, and danceable. If you are interested in pop hits that will empower you, you should listen to my playlist!</p>
+            <iframe style="border-radius:20px" src="https://open.spotify.com/embed/playlist/09JXtYrAZlHDP7BQm1rKBE?utm_source=generator" width="75%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </body>
+{% endblock %}
